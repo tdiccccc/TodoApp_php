@@ -7,7 +7,7 @@
   <script src="https://kit.fontawesome.com/9b2d8a1ff7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>TodoList</h1>
+  <h1 class=>TodoList</h1>
   <form action="" method="POST">
     <div>
       <div>
@@ -16,6 +16,7 @@
         <input type="submit" value="追加する" name="submitButton">
       </div>
       <section>
+        <?php foreach($db as $todo) : ?>
         <article>
           <div>
             <div>
@@ -25,6 +26,7 @@
             </div>
           </div>
         </article>
+        <?php endforeach; ?>
       </section>
     </div>
   </form>
